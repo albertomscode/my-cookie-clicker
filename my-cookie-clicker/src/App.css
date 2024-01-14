@@ -1,0 +1,380 @@
+/* General styles for the document body */
+body {
+  font-family: 'Press Start 2P', cursive;
+  background-image: url('./assets/img/arcade6.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  margin-top: 180px;
+  animation: animatedBackground 10s linear infinite;
+}
+
+/* Animation for the background */
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+
+/* General styles for the application */
+.App {
+  text-align: center;
+}
+
+/* Styles for the title */
+h1 {
+  font-size: 2em;
+}
+
+/* Decorative line */
+.line {
+  margin-top: 200px;
+  font-size: 2em;
+}
+
+/* Styles to display the cookie count */
+.cookie-count {
+  margin-top: 200px;
+}
+
+/* Styles for buttons */
+button {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1em;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for buttons */
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+/* Styles for the shop section */
+#shop {
+  margin-top: 20px;
+  margin-left: 500px;
+  margin-right: 500px;
+}
+
+/* Styles for items in the shop */
+.shop-item {
+  border: 2px solid #4caf50;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* Hover effect for shop items */
+.shop-item:hover {
+  transform: scale(1.05);
+}
+
+/* Styles for buy buttons in the shop */
+.shop-item button {
+  background-color: #6b21f3;
+}
+
+/* Hover effect for buy buttons in the shop */
+.shop-item button:hover {
+  background-color: #6911cf;
+}
+
+/* Styles for the game rules aside */
+.rules-aside {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
+  border: 2px solid #4caf50;
+  border-radius: 10px;
+}
+
+/* Styles for titles in the game rules aside */
+.rules-aside h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+/* Styles for paragraphs in the game rules aside */
+.rules-aside p {
+  margin: 10px 0;
+}
+
+/* Styles for the story aside */
+.story-aside {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
+  border: 2px solid #4caf50;
+  border-radius: 10px;
+  line-height: 1.5;
+  font-weight: lighter;
+}
+
+/* Styles for titles in the story aside */
+.story-aside h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+/* Styles for paragraphs in the story aside */
+.story-aside p {
+  margin: 10px 0;
+}
+
+/* Styles for music controls */
+.music-controls {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 999;
+}
+
+/* Styles for the music button */
+.music-button {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1em;
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the music button */
+.music-button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+/* Styles for the reset button */
+.reset-button {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* Styles for the footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Styles for links in the footer */
+.footer a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* Hover effect for links in the footer */
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Styles for divs in the footer */
+.footer div {
+  margin: 10px 0;
+}
+
+/* Styles for input in the footer */
+.footer input {
+  padding: 5px;
+  margin-right: 5px;
+}
+
+/* Styles for buttons in the footer */
+.footer button {
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Hover effect for buttons in the footer */
+.footer button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+/* Media query small smartphones */
+@media (min-width: 374px) and (max-width: 534px) {
+  body {
+    margin-top: 80px;
+  }
+
+  .title {
+    font-size: 1.4em;
+  }
+
+  .line {
+    font-size: 8px;
+  }
+
+  .music-controls {
+  position: fixed;
+  top: 10px;
+  right: 100px;
+  z-index: 999;
+}
+
+/* Styles for the music button */
+.music-button {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.7em;
+  padding: 3px 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+  
+  .story-aside {
+    margin-top: 20px;
+    margin-left: 90px;
+    margin-right: 90px;
+    line-height: 1.2;
+    font-size: 13px;
+  }
+
+  .rules-aside {
+    margin-top: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+    line-height: 1.2;
+    font-size: 13px;
+  }
+
+
+  #shop {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+
+  .shop-item {
+    margin: 5px;
+  }
+
+  .shop-item button {
+    background-color: #0b7dda;
+  }
+}
+
+/* Media query*/
+@media (min-width: 534px) and (max-width: 769px) {
+  /* Estilos específicos para pantallas más pequeñas */
+  body {
+    margin-top: 80px; /* Ajusta según sea necesario para evitar superposición del contenido */
+  }
+
+  .title {
+    font-size: 1.5em;
+  }
+
+  .line {
+    font-size: 13px;
+  }
+
+  .story-aside {
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    line-height: 1.7;
+    font-size: 13px;
+  }
+
+  .rules-aside {
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    line-height: 1.7;
+    font-size: 13px;
+  }
+
+
+  #shop {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .shop-item {
+    margin: 5px;
+  }
+
+  .shop-item button {
+    background-color: #0b7dda;
+  }
+}
+
+/* Media query*/
+@media (min-width: 769px) and (max-width: 1024px) {
+  body {
+    margin-top: 80px;
+    /* Ajusta según sea necesario para evitar superposición del contenido */
+  }
+
+  .title {
+    font-size: 1.5em;
+  }
+
+  .line {
+    font-size: 13px;
+  }
+
+  .story-aside {
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    line-height: 1.7;
+    font-size: 13px;
+  }
+
+  .rules-aside {
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    line-height: 1.7;
+    font-size: 13px;
+  }
+
+  #shop {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+
+  .shop-item {
+    margin: 5px;
+  }
+
+  .shop-item button {
+    background-color: #0b7dda;
+  }
+}
