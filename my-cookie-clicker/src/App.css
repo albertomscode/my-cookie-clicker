@@ -290,9 +290,8 @@ button:hover {
 
 /* Media query*/
 @media (min-width: 534px) and (max-width: 769px) {
-  /* Estilos específicos para pantallas más pequeñas */
   body {
-    margin-top: 80px; /* Ajusta según sea necesario para evitar superposición del contenido */
+    margin-top: 80px;
   }
 
   .title {
@@ -338,7 +337,6 @@ button:hover {
 @media (min-width: 769px) and (max-width: 1024px) {
   body {
     margin-top: 80px;
-    /* Ajusta según sea necesario para evitar superposición del contenido */
   }
 
   .title {
